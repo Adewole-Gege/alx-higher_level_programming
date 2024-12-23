@@ -1,8 +1,16 @@
-f __name__ == "__main__":
-    import sys
+#!/usr/bin/python3
+import sys
 
-    total_sum = 0
-    
-    for arg in sys.argv[1:]:
-        total_sum += int(arg)
-    print(total_sum)
+if __name__ == "__main__":
+    argv = sys.argv
+    argc = len(argv) - 1  # Exclude the script name
+
+    if argc == 0:
+        print("0 arguments.")
+    elif argc == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(argc))
+
+    for i in range(1, argc + 1):
+        print("{}: {}".format(i, argv[i]))

@@ -1,4 +1,6 @@
-f __name__ == "__main__":
+#!/usr/bin/python3
+
+if __name__ == "__main__":
     import hidden_4  # Import the hidden_4 module
 
     # Get all names defined by the module using dir()

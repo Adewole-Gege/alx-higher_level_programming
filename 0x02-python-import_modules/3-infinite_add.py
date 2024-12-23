@@ -1,8 +1,11 @@
-f __name__ == "__main__":
-    import sys
+#!/usr/bin/python3
+import sys
 
-    total_sum = 0
+if __name__ == "__main__":
+    argv = sys.argv
+    total = 0
 
-    for arg in sys.argv[1:]:
-        total_sum += int(arg) 
-    print(total_sum)
+    for arg in argv[1:]:
+        total += int(arg)
+
+    print(total)
